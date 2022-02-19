@@ -1,1 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.8rem;
+  height: 100vh;
+  width: 100vw;
+  color: #fff;
+  background-size: cover;
+  background-image: linear-gradient(
+      to right,
+      rgba(218, 30, 30, 0.2),
+      rgba(26, 25, 25, 0.2)
+    ),
+    url(/img/back.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.7),
+        rgba(26, 25, 25, 0.7)
+      ),
+      url(/img/back.jpg);
+  }
+}
+
+.heading {
+  font-size: 7rem;
+  margin: 3% 0 4% 40%;
+}
+
+@media screen and (max-width: 1200px) {
+  .heading {
+    margin: 3% 0 4% 5%;
+  }
+}
+
+.countdown__container {
+  margin: 2rem 2rem 2rem 40%;
+  display: flex;
+
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1200px) {
+  .countdown__container {
+    margin: 2rem 0 0 5%;
+    text-align: center;
+    gap: 2rem;
+  }
+}
+
+.countdown__container .cont {
+  text-align: center;
+  border: 2px solid #fff;
+  padding: 1rem 3rem;
+  border-radius: 1.2rem;
+}
+
+.countdown__container .cont:not(:last-child) {
+  margin-right: 4rem;
+}
+
+.countdown__container .cont .head {
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+.countdown__container .cont .text {
+  font-size: 2.4rem;
+}
