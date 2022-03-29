@@ -23,7 +23,7 @@ body {
       rgba(218, 30, 30, 0.2),
       rgba(26, 25, 25, 0.2)
     ),
-    url(/img/back.jpg);
+    url("/img/back.jpg");
   display: flex;
   flex-direction: column;
   align-items: center;
